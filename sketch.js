@@ -29,16 +29,13 @@ function setup() {
   /*feed=createbutton("Feed the dog");
   feed.position(700,95);*/
   
-  /*feed=createButton("Feed the dog");
-  feed.position(70,950);*/
-  
-  /*feed=createButton("Feed the dog");
-  feed.Position(700,95);*/
+  feed=createButton("Feed the dog");
+  feed.position(700,95);
   
   //Uncomment the correct code to call FeedDog() using mousePressed
   //feed.Pressed(feedDog);
   //feed.mousePress(feedDog);
-  //feed.mousePressed(feedDog);
+  feed.mousePressed(feedDog);
   //feed.mousePressed(addfoods);
  
   addFood=createButton("Add Food");
@@ -99,10 +96,10 @@ function feedDog(){
     FeedTime:hour()
   })*/
     
-  /*database.ref('/').update({
+  database.ref('/').update({
     Food:foodObj.getFoodStock(),
     FeedTime:hour()
-  })*/
+  })
    
   /*database.ref('/').update({
     Food:foodObj.getFoodStock,
